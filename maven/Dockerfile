@@ -4,7 +4,7 @@
 #
 # Dockerizing maven: Dockerfile for building maven images
 #
-FROM       csphere/jdk:1.7.0
+FROM       github/jdk:1.7.0
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
 ENV MAVEN_VERSION 3.3.3

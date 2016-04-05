@@ -4,11 +4,11 @@
 #
 # Dockerizing Jenkins: Dockerfile for building Jenkins images
 #
-FROM       csphere/jdk:1.7.0
+FROM       github/jdk:1.7.0
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
 ENV JENKINS_HOME /var/jenkins_home
-ENV JENKINS_VERSION 1.609.1
+ENV JENKINS_VERSION 1.642.4
 ENV JENKINS_UC https://updates.jenkins-ci.org
 ENV COPY_REFERENCE_FILE_LOG /var/log/copy_reference_file.log
 

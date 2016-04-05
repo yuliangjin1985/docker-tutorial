@@ -4,7 +4,7 @@
 #
 # Dockerizing jre: Dockerfile for building jre images
 #
-FROM       csphere/centos:7.1
+FROM       github/centos:7.1
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
 ENV JAVA_VERSION 1.7.0

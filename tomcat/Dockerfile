@@ -4,7 +4,7 @@
 #
 # Dockerizing TOMCAT: Dockerfile for building TOMCAT images
 #
-FROM       csphere/jre:1.7.0
+FROM       github/jre:1.7.0
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
 ENV TOMCAT_MAJOR_VERSION 7

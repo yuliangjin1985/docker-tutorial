@@ -4,7 +4,7 @@
 #
 # Dockerizing HelloWorld: Dockerfile for building HelloWorld images
 #
-FROM       csphere/tomcat:7.0.55
+FROM       github/tomcat:7.0.55
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
 ADD init /init

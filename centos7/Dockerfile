@@ -4,7 +4,7 @@
 #
 # Dockerizing CentOS7: Dockerfile for building CentOS images
 #
-FROM       centos:centos7.1.1503
+FROM       centos:7.1.1503
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
 ENV TZ "Asia/Shanghai"
