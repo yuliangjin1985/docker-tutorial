@@ -16,6 +16,7 @@ ENV APP_DIR ${CATALINA_HOME}/webapps/
 # RUN wget -q https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz
 
 COPY apache-tomcat-7.0.55.tar.gz apache-tomcat-7.0.55.tar.gz
+COPY hello.war ${APP_DIR}
 
 RUN tar zxf apache-tomcat-*.tar.gz && \
     rm apache-tomcat-*.tar.gz && \
@@ -27,4 +28,4 @@ EXPOSE 8080 8443
 
 ENTRYPOINT ["/scripts/run"]
 
-ONBUILD ADD . ${APP_DIR}
+#ONBUILD ADD . ${APP_DIR}
