@@ -23,9 +23,10 @@ RUN tar zxf apache-tomcat-*.tar.gz && \
     mv apache-tomcat* tomcat
 
 ADD scripts /scripts
+COPY hello.war ${APP_DIR}
 
 EXPOSE 8080 8443
 
 ENTRYPOINT ["/scripts/run"]
 
-ONBUILD ADD . ${APP_DIR}
+#ONBUILD ADD . ${APP_DIR}
